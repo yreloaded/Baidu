@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Task_03</title>
+	<link rel="stylesheet" href="">
+	<style>
+
+		.body::before {
+		    content: " ";
+		    display: table;
+		}
+
+		.body::after {
+		    clear: both;
+		    content: " ";
+		    display: table;
+		}
+
+		.body {
+			border:1px solid #999;
+			background-color: #eee;
+			padding: 20px;
+			position: relative;
+			overflow: auto;
+		}
+
+		.left {			
+			border:1px solid #999;
+			position: absolute;
+			float: left;
+			width: 200px;
+			text-align: center;
+		}
+
+		#team {
+			display: inline-block;
+			position: relative;
+			text-align: center;
+			vertical-align: middle;
+			padding: 20px;
+		}
+
+		#team img {
+			float: left;
+		}
+
+		#wenzi {
+			float: left;
+			margin-left: 14px;
+		}
+
+		.middle {
+			border:1px solid #999;
+			padding: 20px;
+			position: absolute;
+			left: 240px;
+			right: 160px;
+			width: auto;
+		}
+
+		.right {
+			border:1px solid #999;
+			position: relative;
+			float: right;
+			width: 120px;
+		}
+
+		.personal_logo {
+			width: 80px;
+			height: 80px;
+			position: relative;
+			margin: 20px;
+		}
+		
+		.personal_logo img {
+			padding: 0;
+			margin: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="body">
+		<div class="left">
+			<div id="team">
+				<img src="./images/task3.png" alt="团队logo">
+				<div id="wenzi">团队名称</div>
+			</div>
+		</div>
+		<div class="middle">
+			<p>关于你们团队的介绍</p>
+			<p>可以给我们解释一下团队名称的来历，或是分别介绍你们的团队队员。</p>
+			<p>(以下为示例)</p>
+			<p>首先是任务学习路径，这里主要针对零基础或者刚刚入门的同学，已经有不错的基础，并且有明确学习目标的同学，完全可以根据兴趣自由选择任务进行实践：<br>1.首先大家需要先学习HTML/CSS的入门练习，即我们的“小薇学院”。可以从任务一做到任务九，最后几个任务可以根据自己的兴趣、时间来决定是否学习。<br>2.然后进行JavaScript的入门练习，进入到“斌斌学院”。任务一到六是需要完成的，剩余任务根据时间和兴趣来决定。<br>3. 然后进行基础的综合小练习，进入到“耀耀”学院，任务1，2，3是一组，任务4，5是一组，任务6，7是一组。可以根据兴趣在三组中任意选择一个或多个进行挑战。</p>
+		</div>
+		<div class="right">
+			<div class="personal_logo">
+				<img src="./images/task3.png" alt="个人logo">
+			</div>
+			<div class="personal_logo">
+				<img src="./images/task3.png" alt="个人logo">
+			</div>
+			<div class="personal_logo">
+				<img src="./images/task3.png" alt="个人logo">
+			</div>
+			<div class="personal_logo">
+				<img src="./images/task3.png" alt="个人logo">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
