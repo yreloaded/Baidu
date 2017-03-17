@@ -1,0 +1,203 @@
+body, p, h1 {
+	margin: 0;
+}
+
+h3, span.text {
+	color: #5e5e5e;
+}
+
+body {
+	background: #eee;
+}
+
+#a1 ,#a2,#a3,#a4 {
+	background: #fff;
+	border-color: #e3e3e3 #5e5e5e #5e5e5e #e3e3e3;
+	border-style: solid;
+	border-width: 1px 3px 3px 1px;
+	margin: 30px;
+	padding: 20px;
+}
+
+#header{
+	height: 60px;
+	width: 100%;
+	background: #333;
+}
+
+.text-right {
+	float: right;
+}
+
+.logo-name {
+	color: #fff;
+	font-size: 24px;
+	line-height: 50px;
+	margin-left: 10px;
+}
+
+ul.menu {
+	line-height: 50px;
+	list-style: outside none none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	right: 20px;
+}
+
+ul.menu > li{
+	border-bottom: 4px solid transparent;
+	float: left;
+	height: 58px;
+	margin-left: 30px;
+	text-align: center;
+	width: 100px;
+}
+
+ul.menu > li:hover {
+	background: #888;
+	border-bottom-color: #00a0e9;
+	padding: 0 3px;
+}
+
+ul.menu > li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.pic-list {
+	margin-left: 30px;
+}
+
+.pic-item {
+	border: 1px solid #5e5e5e;
+	height: 265px;
+	margin-bottom: 15px;
+	text-align: center;
+	width: 300px;
+}
+
+.pic-item p {
+	margin: 10px 0;
+}
+
+.pic-item img {
+	vertical-align: middle;
+}
+
+.list-none-style {
+	list-style: outside none none;
+}
+
+.text-strong {
+	font-weight: bold;
+}
+
+table {
+	border: 1px solid #ddd;
+	border-collapse: collapse;
+	display: inline-table;
+	padding: 3px;
+	width: 100%;
+}
+
+thead {
+	border-color: inherit;
+	display: table-header-group;
+	vertical-align: middle;
+}
+
+table th {
+	background-color: #2d3e4d;
+	border: 1px solid #ddd;
+	color: #fff;
+}
+
+table tr {
+	background-color: #fff;
+	border-top: 1px solid #ccc;
+}
+
+table td {
+	border: 1px solid #ddd;
+	padding: 6px 12px;
+}
+
+table tr.total {
+	background-color: #d4d4d4;
+	font-weight: bold;
+}
+
+#celan {
+	border-left: 3px solid #ddd;
+	font-size: 18px;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 10px;
+}
+
+.form-content {
+	text-align: center;
+	width: 100%;
+}
+
+.col-4 {
+	float: left;
+	width: 40%;
+}
+
+.col-6 {
+	float: right;
+	width: 60%;
+}
+
+.col-12 {
+	width: 100%;
+}
+
+.pull-right {
+	text-align: right;
+}
+
+.pull-left {
+	text-align: left;
+}
+
+.form-control {
+	display: inline-block;
+}
+
+.row {
+	display: block;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.row:before {
+	content: "";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.form-info {
+	color: #999;
+}
+
+.btn {
+	background-color: #00a0e9;
+	border: medium none;
+	border-radius: 10px;
+	color: #fff;
+	padding: 8px 13px;
+}
+
+#footer {
+	height: 20px;
+	padding: 10px;
+	text-align: center;
+}
