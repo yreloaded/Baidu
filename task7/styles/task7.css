@@ -1,0 +1,602 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-width: 1280px;
+	border: 1px solid black;
+}
+
+header {
+	height: 55px;
+	width: 100%;
+	background-color: #fff;
+}
+
+header img {
+	float: left;
+	margin-left: 50px;
+	margin-top: 3px;
+}
+
+header span {
+	line-height: 54px;
+	font-size: 20px;
+	margin-left: 0;
+}
+
+nav ul {
+	position: absolute;
+	right: 50px;
+	top: 0;
+	list-style: outside none none;
+
+}
+
+nav li {
+	float: left;
+	margin-left: 10px;
+	text-align: center;
+	font-size: .9em;
+}
+
+nav a {
+	text-decoration: none;
+	color: #888;
+	display: inline-block;
+	line-height: 54px;
+	width: 88px;
+}
+
+nav a:hover {
+	color: #e74f4d;
+	border-bottom: 3px solid #e74f4d;
+	margin-right: 3px;
+}
+
+.login {
+	background-image: url(../images/task7-2.jpg);
+	/*外部引入CSS文件时，backgrund-image的路径相对于CSS文件
+	内部引入时，相对于html*/
+	background-repeat: no-repeat;
+	background-position: 10px 20px;
+}
+
+.login a {
+	color: #e9605e;
+}
+
+#sec1 {
+	position: relative;
+	width: 100%;
+	height: 690px;
+}
+
+#sec1 img {
+	width: 100%;
+	height: 100%;
+}
+
+#sec1>div {
+	position: absolute;
+	top: 160px;
+	left: 110px;
+	color: white;
+}
+
+#sec1 p {
+	font-size: 50px;
+}
+
+#sec1 span {
+	font-size: 18px;
+}
+
+#sec1 button {
+	position: absolute;
+	top: 350px;
+	left: 120px;
+	width: 330px;
+	height: 64px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 24px;
+	background-color: #e74f4d;
+	color: #fff;
+	border-width: 0;
+}
+
+#sec2 {
+	height: 250px;
+	width: 100%;
+}
+
+#sec2>div {
+	float: left;
+	width: 25%;
+}
+
+.l1,.l2,.l3,.l4 {
+	color: #888;
+	text-align: center;
+}
+
+.l1 div,.l2 div,.l3 div,.l4 div {
+	width: 50px;
+	height: 50px;
+	margin: 50px auto 50px;
+	background-image: url("../images/task7-4.jpg");
+	background-repeat: no-repeat;
+}
+
+.l1 p,.l2 p,.l3 p,.l4 p {
+	font-size: 14px;
+	line-height: 20px;
+	border-right: 2px solid #aaa;
+}
+
+#sec2>.l1>div {
+	background-position: -10px -16px;
+}
+
+#sec2>.l2>div {
+	background-position: -59px -16px;
+}
+
+#sec2>.l3>div {
+	background-position: -110px -15px;
+}
+
+#sec2>.l4>div {
+	background-position: -162px -14px;
+}
+
+#sec3 {
+	height: 360px;
+	background-color: #ececec;
+	color: #a1a1a1;
+	text-align: center;
+}
+
+#sec3 img {
+	height: 100px;
+	width: 100px;
+	margin: 130px auto 25px;
+}
+
+#sec3 p {
+	display: block;
+	font-size: 40px;
+}
+
+#sec4>div {
+	height: 340px;
+	background-image: url(../images/task7-6.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	text-align: center;
+	color: #fff;
+}
+
+#sec4>div>p {
+	display: inline-block;
+	font-size: 25px;
+	margin-top: 50px;
+}
+
+#sec4>div hr {
+	margin: 8px auto 20px;
+	width: 30px;
+	border: 1px solid #fff;
+}
+
+#sec4>div span {
+	font-size: 14px;
+}
+
+.city {
+	position: relative;
+}
+
+.city input {
+	height: 35px;
+	width: 200px;
+	margin-top: 40px;
+	margin-left: 20px;
+	border-width: 0;
+	padding-left: 15px;
+	background-image: url(../images/task7-7.png);
+	background-repeat: no-repeat;
+	background-position: 190px 10px;
+}
+
+.search {
+	width: 200px;
+	height: 35px;
+	margin-left: 20px;
+	background-color: #e74f4d;
+	color: #fff;
+	border-width: 0;
+	text-align: center;
+}
+
+.city ul {
+	background-color: #e3e3e3;
+	color: #000;
+	width: 216px;
+	position: absolute;
+    top: 76px;
+    left: 429px;
+    border: 1px solid #e74f4d;
+}
+
+.city li {
+	height: 34px;
+    line-height: 34px;
+    text-align: left;
+    padding-left: 35px;
+    list-style: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.city input:nth-child(5n+2) {
+	border: 1px solid #e74f4d;
+}
+
+.city li:hover {
+	background-color: #e74f4d;
+	color: #fff;
+	background-image: url(../images/task7-8.png);
+	background-repeat: no-repeat;
+	background-position: 12px 14px;
+}
+
+#sec5 {
+	height: 400px;
+	background-color: #f7f7f7;
+	padding: 100px;
+}
+
+#sec5>div {
+	float: left;
+	text-align: center;
+	margin-left: 38px;
+}
+
+#sec5 div>div {
+	margin-bottom: 10px;
+	padding: 12px;
+	background-color: #fff;
+}
+
+.act_other>div {
+	margin-top: 10px;
+}
+
+#sec5 p {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#sec5 span {
+	display: block;
+	margin-top: 10px;
+	font-size: 15px;
+}
+
+.act_other>p {
+	letter-spacing: 25px;
+}
+
+#sec6 {
+	height: 566px;
+	width: 100%;
+}
+
+.six_l {
+	float: left;
+	height: 466px;
+	width: 63%;
+	background-image: url(../images/task7-13.jpg);
+	background-repeat: no-repeat;
+	color: #fff;
+	text-align: center;
+	padding-top: 100px;
+}
+
+.six_l p:first-child {
+	font-size: 55px;
+}
+
+.six_l p:nth-child(5n+2) {
+	font-size: 150px;
+}
+
+.six_l p:nth-child(2n+3),.six_l p:last-child {
+	font-size: 24px;
+}
+
+.six_l div {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 20px 35px 20px 0;
+	border-color: transparent #fff transparent transparent;
+	margin-left: 820px;
+	margin-top: -160px;
+}
+
+.six_r {
+	float: right;
+	width: 37%;
+	height: 100%;
+	text-align: center;
+	background-image: url(../images/task7-14.png);
+	background-repeat: no-repeat;
+	background-position: 180px 420px; 
+}
+
+.six_r h2 {
+	margin-top: 100px;
+}
+
+.six_r span{
+	color: #e74f4d;
+}
+
+.six_r p {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 30px;
+	color: #b0b0b0;
+	margin: 20px 80px 65px 80px;
+}
+
+.six_r button {
+	width: 150px;
+	height: 45px;
+	font-size: 16px;
+	border-color: #e9605e;
+	background-color: #fff;
+	color: #e9605e;
+	border-width: 1px;
+}
+
+#sec7 {
+	height: 566px;
+}
+
+.seven_l {
+	width: 31.5%;
+	height: 100%;
+	background-color: #e74f4d;
+	float: left;
+	text-align: center;
+	color: #fff;
+}
+
+.seven_m {
+	width: 31.5%;
+	height: 100%;
+	background-color: #fff;
+	text-align: center;
+	float: left;
+}
+
+.seven_r {
+	float: right;
+	width: 37%;
+	height: 100%;
+	background-image: url(../images/task7-15.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.seven_r div {
+	height: 0;
+	width: 0;
+	border-style: solid;
+	border-width: 20px 0 20px 32px;
+	border-color: transparent transparent transparent #fff;
+	margin-top: 320px;
+}
+
+.seven_l p:first-child {
+	margin-top: 200px;
+}
+
+.seven_l p {
+	font-size: 24px;
+	line-height: 40px;
+}
+
+.seven_l hr {
+	width: 30px;
+	border: 1px solid #fff;
+	margin: 18px auto 25px;
+}
+
+.seven_l button {
+	font-size: 22px;
+	color: #fff;
+	border: 1px solid #fff;
+	width: 200px;
+	height: 50px;
+	background-color: #e74f4d;
+}
+
+.seven_m p:first-child {
+	margin-top: 200px;
+}
+
+.seven_m p {
+	font-size: 24px;
+	line-height: 40px;
+}
+
+.seven_m hr {
+	width: 30px;
+	border: 1px solid #ababab;
+	margin: 18px auto 25px;
+}
+
+.seven_m button {
+	font-size: 22px;
+	color: #e74f4d;
+	border: 1px solid #e74f4d;
+	width: 200px;
+	height: 50px;
+	background-color: #fff;
+}
+
+#sec8 {
+	height: 750px;
+}
+
+.eight_t {
+	float: left;
+	width: 100%;
+	padding: 80px 0;
+	text-align: center;
+}
+
+.eight_t h2 {
+	font-size: 32px;
+}
+
+.eight_t hr {
+	width: 28px;
+	border: 1px solid #e74f4d;
+	margin: 9px auto 18px;
+}
+
+.eight_t p {
+	color: #888;
+}
+
+.eight_l {
+	width: 30%;
+	height: 450px;
+	float: left;
+	margin-left: 100px;
+
+}
+
+.eight_l h3 {
+	margin: 15px 0;
+}
+
+.eight_l p {
+	font-size: 15px;
+	line-height: 30px;
+	color: #777;
+}
+
+.eight_l span {
+	font-size: 14px;
+	color: #777;
+	margin-left: 83%;
+}
+
+.eight_r {
+	float: right;
+	height: 450px;
+	width: 50%;
+	margin: 10px 100px 0 0;
+}
+
+.eight_r input {
+	float: left;
+	width: 40%;
+	height: 45px;
+	margin: 10px;
+	padding-left: 15px;
+	background-color: #ededed;
+	border-width: 0;
+}
+
+.eight_r textarea {
+	height: 125px;
+	width: 85.5%;
+	margin: 10px;
+	border-width: 0;
+	background-color: #ededed;
+	padding: 10px 0 0 15px;
+}
+
+.eight_r button {
+	height: 40px;
+	width: 88%;
+	margin: 10px;
+	border-width: 0;
+	background-color: #ededed;
+
+}
+
+#sec9 {
+	height: 355px;
+	background-color: #32353e;
+	background-image: url(../images/task7-16.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 90%;
+	color: #fff;
+	text-align: center;
+}
+
+#sec9 h3 {
+	padding-top: 100px;
+}
+
+#sec9 p {
+	margin-top: 10px;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+#sec9 div {
+	height: 34px;
+	width: 550px;
+	margin: 25px auto;
+
+}
+
+#sec9 input:first-child {
+	float: left;
+	height: 100%;
+	width: 450px;
+	border-width: 0;
+	padding-left: 10px;
+}
+
+#sec9 input:last-child {
+	float: left;
+	width: 90px;
+	height: 100%;
+	background-color: #6f7278;
+	color: #fff;
+	border-width: 0;
+}
+
+footer {
+	height: 55px;
+	background-color: #2f2f38;
+}
+
+footer p {
+	float: left;
+	color: #fff;
+	font-size: 10px;
+	margin-left: 100px;
+	line-height: 55px;
+}
+
+footer a {
+	float: right;
+	color: #fff;
+	font-size: 10px;
+	margin-right: 60px;
+	line-height: 55px;
+	text-decoration: none;
+}
