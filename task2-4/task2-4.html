@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>IFE task2-4</title>
+	<link rel="stylesheet" href="">
+	<style>
+		#num {
+			margin-top: 20px;
+			font-size: 18px;
+		}
+
+		#num>span {
+			background-color: red;
+			color: #fff;
+			margin: 0 4px;
+			padding: 10px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" id="shuru">
+	<button id="left_in" onclick="leftin()">左侧入</button>
+	<button id="right_in" onclick="rightin()">右侧入</button>&nbsp;&nbsp;&nbsp;
+	<button id="left_out" onclick="leftout()">左侧出</button>
+	<button id="right_out" onclick="rightout()">右侧出</button>
+	<div id="num">
+		<span>2</span>
+		<span>54</span>
+		<span>21</span>
+		<span>7</span>
+		<span>19</span>
+	</div>
+	<script type="text/javascript">
+		var zhi = document.getElementById('shuru');
+		var odiv = document.getElementById("num");
+
+		function leftin() {
+			var span = document.createElement("span");
+			span.innerText=zhi.value;
+			odiv.insertBefore(span,odiv.children[0]);
+		}
+
+
+		function rightin(){
+			var span = document.createElement("span");
+			span.innerText=zhi.value;
+			odiv.appendChild(span);
+		}
+
+		function leftout(){
+			var x = odiv.children[0];
+			odiv.removeChild(x);
+			alert("删除第一个数字："+ x.innerText);
+		}
+
+		function rightout(){
+			var x = odiv.children[odiv.children.length-1];
+			odiv.removeChild(x);
+			alert("删除最后一个数字："+ x.innerText);
+		}
+
+		//点击队列中任何一个元素，则该元素会被从队列中删除
+		odiv.addEventListener('click',function(e){
+        console.log(e)
+        if(e.target && e.target.nodeName==='SPAN'){
+            odiv.removeChild(e.target);
+        }
+    });
+	</script>
+</body>
+</html>
